@@ -4,11 +4,11 @@ export default function RefineryIllustration({ className = "" }: { className?: s
       <defs>
         <linearGradient id="skyfade" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#0B2B26" stopOpacity="0" />
-          <stop offset="100%" stopColor="#050d1f" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#06211c" stopOpacity="0.9" />
         </linearGradient>
       </defs>
       <rect x="0" y="0" width="400" height="220" fill="url(#skyfade)" />
-      <g fill="#13284f">
+      <g fill="#123832">
         <rect x="20" y="120" width="10" height="90" />
         <rect x="45" y="90" width="14" height="120" />
         <rect x="75" y="140" width="8" height="70" />

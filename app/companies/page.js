@@ -182,7 +182,7 @@ export default function CompaniesPage() {
 
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
         {/* Search bar */}
-        <div className="-mt-8 rounded-xl border border-[#e8edf5] bg-white p-3 shadow-card">
+        <div className="relative z-10 -mt-8 rounded-xl border border-[#e8edf5] bg-white p-3 shadow-card">
           <div className="grid gap-3 lg:grid-cols-[1.6fr_1fr_1fr_1fr_auto]">
             <div className="relative">
               <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-500" />
@@ -215,7 +215,7 @@ export default function CompaniesPage() {
                 <option>Sort by: A – Z</option>
               </select>
             </div>
-            <button className="btn-primary px-7">
+            <button className="btn-primary relative z-10 px-7">
               <Search className="h-4 w-4" /> Search
             </button>
           </div>
