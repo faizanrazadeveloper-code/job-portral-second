@@ -8,7 +8,7 @@ import { Linkedin, Facebook, Twitter } from "@/components/Shared";
 const navLinks = [
   { label: "Jobs", href: "/jobs" },
   { label: "Companies", href: "/companies" },
-  { label: "Categories", href: "#" },
+  { label: "Categories", href: "/admin/job-categories" },
   { label: "Articles", href: "/articles" },
   { label: "Locations", href: "#" },
   { label: "Packages", href: "#" },
