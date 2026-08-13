@@ -182,22 +182,22 @@ export default function AdminDashboardPage() {
           </div>
 
           {/* Bottom row */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl border border-slate-100 p-5">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="font-semibold text-slate-900">Top Job Categories</h2>
                 <a href="/admin/job-categories" className="text-xs text-blue-600 font-medium">View All</a>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-32 h-32 shrink-0 relative">
+                <div className="w-24 h-24 shrink-0 relative">
                   <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
                       <Pie
                         data={jobCategories}
                         dataKey="value"
                         nameKey="label"
-                        innerRadius={38}
-                        outerRadius={62}
+                        innerRadius={26}
+                        outerRadius={44}
                         paddingAngle={2}
                         stroke="none"
                       >
@@ -208,18 +208,18 @@ export default function AdminDashboardPage() {
                     </PieChart>
                   </ResponsiveContainer>
                   <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-                    <span className="text-lg font-bold text-slate-900">3,489</span>
+                    <span className="text-sm font-bold text-slate-900">3,489</span>
                     <span className="text-[10px] text-slate-400">Total Jobs</span>
                   </div>
                 </div>
                 <div className="flex-1 space-y-2">
                   {jobCategories.map((c) => (
-                    <div key={c.label} className="flex items-center justify-between text-xs">
-                      <span className="flex items-center gap-1.5 text-slate-600">
+                    <div key={c.label} className="flex items-center justify-between gap-2 text-xs">
+                      <span className="flex items-center gap-1.5 text-slate-600 min-w-0">
                         <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: c.color }} />
-                        {c.label}
+                        <span className="truncate">{c.label}</span>
                       </span>
-                      <span className="text-slate-500 font-medium shrink-0 ml-2">
+                      <span className="text-slate-500 font-medium shrink-0 whitespace-nowrap">
                         {c.value.toLocaleString()} <span className="text-slate-400">({c.pct})</span>
                       </span>
                     </div>

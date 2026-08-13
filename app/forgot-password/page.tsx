@@ -102,7 +102,7 @@ export default function ForgotPasswordPage() {
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-8 shrink-0">
+          <div className="flex flex-wrap items-center justify-center gap-6 gap-y-4 sm:gap-8 shrink-0">
             <div className="flex flex-col items-center gap-1.5 text-xs text-slate-600 font-medium">
               <Lock className="w-5 h-5 text-blue-600" />
               SSL Encrypted

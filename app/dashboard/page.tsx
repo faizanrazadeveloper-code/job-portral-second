@@ -330,10 +330,10 @@ export default function JobSeekerDashboardPage() {
                 <input
                   type="text"
                   placeholder="Search jobs, companies, skills..."
-                  className="w-full py-2.5 pl-10 pr-3 text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none"
+                  className="w-full py-2.5 pl-9 pr-3 text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none sm:pl-10"
                 />
               </div>
-              <button className="flex items-center gap-1 border-l border-slate-200 px-3 text-sm text-slate-500">
+              <button className="hidden items-center gap-1 border-l border-slate-200 px-3 text-sm text-slate-500 sm:flex">
                 Jobs
                 <ChevronDown className="h-3.5 w-3.5" />
               </button>

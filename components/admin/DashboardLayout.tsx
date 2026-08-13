@@ -12,7 +12,7 @@ export default function DashboardLayout({
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="h-screen bg-[#f5f6f8] lg:flex overflow-hidden">
+    <div className="min-h-screen bg-[#f5f6f8] lg:flex lg:h-screen lg:overflow-hidden">
       <DashboardSidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       <div className="flex-1 min-w-0 flex flex-col">
         <AdminTopbar variant="dark" onMenuClick={() => setSidebarOpen(true)} />

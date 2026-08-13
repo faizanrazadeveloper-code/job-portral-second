@@ -230,7 +230,7 @@ export default function ArticlesManagementPage() {
 
           <div className="flex flex-col items-center justify-between gap-3 border-t border-gray-100 p-4 sm:flex-row">
             <p className="text-[13px] text-gray-500">Showing 1 to 8 of 756 articles</p>
-            <div className="flex items-center gap-1.5">
+            <div className="flex flex-wrap items-center gap-1.5">
               <button className="rounded-md border border-gray-200 px-2.5 py-1.5 text-[13px] text-gray-400">‹</button>
               {[1, 2, 3, 4, 5].map((n) => (
                 <button

@@ -47,7 +47,7 @@ const columns = [
 export default function SiteFooter() {
   return (
     <footer className="bg-[#0B2B26] text-slate-300">
-      <div className="mx-auto max-w-7xl px-6 py-14 grid grid-cols-2 md:grid-cols-6 gap-10">
+      <div className="mx-auto max-w-7xl px-6 py-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-10">
         <div className="col-span-2">
           <Link href="/" className="flex items-center gap-2">
             <img src="/logo.png" alt="Energy Tail" className="h-10 w-auto object-contain" />

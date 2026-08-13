@@ -25,7 +25,7 @@ export default function AuthLeftPanel({
   illustrationHeight = "h-44",
 }: AuthLeftPanelProps) {
   return (
-    <div className={`relative bg-gradient-to-br from-[#0B2B26] to-[#123832] p-10 flex flex-col overflow-hidden ${minHeight}`}>
+    <div className={`relative bg-gradient-to-br from-[#0B2B26] to-[#123832] p-6 sm:p-10 flex flex-col overflow-hidden ${minHeight}`}>
       <h1 className="text-3xl font-extrabold text-white">{title}</h1>
       <p className="mt-3 text-slate-300 text-sm leading-relaxed max-w-sm">{subtitle}</p>
       {showDivider && <div className="border-t border-white/10 my-6" />}

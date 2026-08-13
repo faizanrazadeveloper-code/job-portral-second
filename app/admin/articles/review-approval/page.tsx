@@ -293,7 +293,7 @@ export default function ArticleReviewApprovalPage() {
                 </div>
 
                 {/* Tabs */}
-                <div className="mb-4 flex gap-6 border-b border-slate-200">
+                <div className="mb-4 flex gap-6 overflow-x-auto whitespace-nowrap border-b border-slate-200">
                   {tabs.map((tab) => {
                     const count =
                       tab.key === "pending"
@@ -488,7 +488,7 @@ export default function ArticleReviewApprovalPage() {
                     <p className="text-sm text-slate-400">
                       Showing 1 to {filteredArticles.length} of {filteredArticles.length} articles
                     </p>
-                    <div className="flex items-center gap-1.5">
+                    <div className="flex flex-wrap items-center gap-1.5">
                       <button className="rounded-lg border border-slate-200 p-1.5 text-slate-400 hover:bg-slate-50">
                         <ChevronLeft className="h-4 w-4" />
                       </button>

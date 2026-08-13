@@ -428,7 +428,7 @@ export default function JobsPage() {
           <div className="flex w-full md:w-auto gap-2 shrink-0">
             <input
               placeholder="Enter your email address"
-              className="flex-1 md:w-64 px-4 py-2.5 rounded-lg border border-slate-200 text-sm outline-none focus:border-blue-400"
+              className="min-w-0 flex-1 md:w-64 px-4 py-2.5 rounded-lg border border-slate-200 text-sm outline-none focus:border-blue-400"
             />
             <button className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg">
               Subscribe

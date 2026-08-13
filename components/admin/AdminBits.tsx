@@ -28,8 +28,8 @@ export function AdminToolbar({ searchPlaceholder }: { searchPlaceholder: string 
           Apply
         </button>
       </div>
-      <div className="ml-auto flex items-center gap-2.5">
-        <div className="flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-lg px-3 h-9 w-56">
+      <div className="ml-auto flex flex-wrap items-center gap-2.5">
+        <div className="flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-lg px-3 h-9 w-full sm:w-56">
           <Search className="w-4 h-4 text-slate-400" />
           <input
             className="bg-transparent text-[13px] outline-none flex-1 placeholder:text-slate-400"
@@ -50,7 +50,7 @@ export function AdminPagination({ page = 1, totalPages, text }: { page?: number;
   return (
     <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-4 border-t border-slate-100">
       <div className="text-[12.5px] text-slate-500">Showing {text}</div>
-      <div className="flex items-center gap-1.5">
+      <div className="flex flex-wrap items-center gap-1.5">
         <button className="w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 disabled:opacity-40">
           <ChevronLeft className="w-4 h-4" />
         </button>

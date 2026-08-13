@@ -178,7 +178,7 @@ export default function ArticlesPage() {
 
         <div className="mt-6 grid gap-6 lg:grid-cols-[268px_minmax(0,1fr)]">
           {/* Filters */}
-          <aside className="card h-fit p-5">
+          <aside className="card h-fit w-full min-w-0 p-5">
             <div className="mb-4 flex items-center justify-between">
               <h3 className="text-[15px] font-bold">Filters</h3>
               <button className="text-[12.5px] font-semibold text-brand-500">Clear All</button>
@@ -227,7 +227,7 @@ export default function ArticlesPage() {
           </aside>
 
           {/* Results */}
-          <div>
+          <div className="min-w-0">
             <div className="mb-5 flex flex-col gap-4 xl:flex-row xl:items-center">
               <div className="flex gap-6 border-b border-[#e8edf5]">
                 {["All Articles", "Trending", "Latest"].map((t, i) => (
@@ -263,12 +263,12 @@ export default function ArticlesPage() {
               </div>
             </div>
 
-            <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
               {articles.map((a) => (
                 <Link
                   href={a.href || "/article-details"}
                   key={a.title}
-                  className="card group overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lg"
+                  className="card group min-w-0 overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lg"
                 >
                   <div className={`ph ${a.img} h-[132px]`}>
                     <span className="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded-lg bg-black/35 text-white backdrop-blur">
@@ -303,7 +303,7 @@ export default function ArticlesPage() {
             <div className="mt-7 flex flex-col items-center gap-4 xl:flex-row">
               <p className="text-[12.5px] text-ink-500">Showing 1 to 12 of 1,248 articles</p>
 
-              <div className="flex items-center gap-1.5 xl:mx-auto">
+              <div className="flex flex-wrap items-center justify-center gap-1.5 xl:mx-auto">
                 {[ChevronsLeft, ChevronLeft].map((Icon, i) => (
                   <button
                     key={i}

@@ -132,7 +132,7 @@ export default function UsersManagementPage() {
                     Apply
                   </button>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-wrap items-center gap-3">
                   <button className="flex items-center gap-2 text-sm font-medium text-slate-600 border border-slate-200 rounded-lg px-3.5 py-2 hover:bg-slate-50">
                     <Download className="w-4 h-4" />
                     Export
@@ -217,7 +217,7 @@ export default function UsersManagementPage() {
 
               <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 border-t border-slate-100">
                 <div className="text-xs text-slate-500">Showing 1 to 10 of 2,846 users</div>
-                <div className="flex items-center gap-1.5">
+                <div className="flex flex-wrap items-center gap-1.5">
                   <button className="p-1.5 rounded-md border border-slate-200 text-slate-400 hover:bg-slate-50">
                     <ChevronLeft className="w-4 h-4" />
                   </button>

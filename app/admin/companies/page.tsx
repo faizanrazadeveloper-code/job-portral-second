@@ -88,7 +88,7 @@ export default function CompaniesPage() {
                 Apply
               </button>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <button className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 border border-blue-200 bg-blue-50 rounded-lg px-3 py-2 hover:bg-blue-100">
                 <Download size={15} />
                 Export
@@ -180,7 +180,7 @@ export default function CompaniesPage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3 p-4 border-t border-gray-100">
               <p className="text-sm text-gray-500">Showing 1 to 10 of 1,253 companies</p>
-              <div className="flex items-center gap-1.5">
+              <div className="flex flex-wrap items-center gap-1.5">
                 <button className="p-1.5 border border-gray-200 rounded-md text-gray-400 hover:bg-gray-50">
                   <ChevronLeft size={15} />
                 </button>

@@ -131,7 +131,7 @@ export default function HomePage() {
 
           {/* Search card */}
           <div className="mt-10 bg-white rounded-2xl shadow-2xl max-w-3xl overflow-hidden">
-            <div className="flex text-sm font-semibold">
+            <div className="flex flex-wrap text-sm font-semibold">
               <button className="px-6 py-3 text-blue-600 border-b-2 border-blue-600 flex items-center gap-2">
                 <Briefcase size={15} /> Find Jobs
               </button>

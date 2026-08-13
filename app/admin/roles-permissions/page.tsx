@@ -118,7 +118,7 @@ export default function RolesPermissionsPage() {
 
             {/* Detail panel */}
             <div className="bg-white rounded-2xl border border-slate-100 overflow-hidden">
-              <div className="flex items-center gap-6 px-5 border-b border-slate-100">
+              <div className="flex items-center gap-6 overflow-x-auto whitespace-nowrap px-5 border-b border-slate-100">
                 {detailTabs.map((t) => (
                   <button
                     key={t}
