@@ -459,8 +459,8 @@ export function DarkFooter() {
   return (
     <footer className="bg-[#0B2B26] text-white">
       <div className="mx-auto max-w-[1440px] px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]">
-          <div>
+        <div className="grid grid-cols-2 gap-10 lg:grid-cols-[1.5fr_repeat(4,1fr)]">
+          <div className="col-span-2 lg:col-span-1">
             <Logo />
             <p className="mt-4 max-w-[250px] text-[12.5px] leading-relaxed text-white/60">
               Connecting energy professionals with top employers worldwide.

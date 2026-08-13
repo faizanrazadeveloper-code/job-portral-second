@@ -1,6 +1,6 @@
 import { Briefcase, Building2, ClipboardList, Bell, User, Mail, Lock, Eye, UserPlus, ShieldCheck, BadgeCheck, TrendingUp, Building, Lock as LockIcon } from "lucide-react";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { DarkFooter } from "@/components/Shared";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthLeftPanel from "@/components/auth/AuthLeftPanel";
 import FormField from "@/components/ui/FormField";
@@ -229,7 +229,7 @@ export default function RegisterPage() {
         />
       </main>
 
-      <Footer />
+      <DarkFooter />
     </>
   );
 }

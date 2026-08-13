@@ -3,7 +3,7 @@
 import Link from "next/link";
 import {
   PublicHeader,
-  PublicFooter,
+  DarkFooter,
   Avatar,
   Facebook,
   Linkedin,
@@ -270,7 +270,7 @@ export default function ArticleDetailsPage() {
         </div>
       </div>
 
-      <PublicFooter />
+      <DarkFooter />
     </div>
   );
 }

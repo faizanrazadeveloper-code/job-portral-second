@@ -1,6 +1,6 @@
 import { Mail, CheckCircle2, Clock, RefreshCw, Pencil, HelpCircle, Send, ShieldCheck, UserCheck, Lock, Bell, Headphones } from "lucide-react";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { DarkFooter } from "@/components/Shared";
 import Breadcrumb from "@/components/Breadcrumb";
 import PrimaryButton from "@/components/ui/PrimaryButton";
 import InfoBanner from "@/components/ui/InfoBanner";
@@ -117,7 +117,7 @@ export default function VerifyEmailPage() {
         />
       </main>
 
-      <Footer />
+      <DarkFooter />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { Search, Building2, ClipboardList, Mail, Lock, LogIn, ShieldCheck, Headphones, Briefcase } from "lucide-react";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { DarkFooter } from "@/components/Shared";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthLeftPanel from "@/components/auth/AuthLeftPanel";
 import FormField from "@/components/ui/FormField";
@@ -139,7 +139,7 @@ export default function LoginPage() {
         />
       </main>
 
-      <Footer />
+      <DarkFooter />
     </>
   );
 }

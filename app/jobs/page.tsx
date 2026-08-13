@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
+import { DarkFooter } from "@/components/Shared";
 import {
   Search,
   MapPin,
@@ -437,7 +437,7 @@ export default function JobsPage() {
         </div>
       </section>
 
-      <SiteFooter />
+      <DarkFooter />
     </div>
   );
 }

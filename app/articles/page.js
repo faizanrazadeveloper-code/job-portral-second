@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { PublicHeader, PublicFooter, Avatar } from "@/components/Shared";
+import { PublicHeader, DarkFooter, Avatar } from "@/components/Shared";
 import {
   Bookmark,
   ChevronDown,
@@ -347,7 +347,7 @@ export default function ArticlesPage() {
         </div>
       </div>
 
-      <PublicFooter />
+      <DarkFooter />
     </div>
   );
 }

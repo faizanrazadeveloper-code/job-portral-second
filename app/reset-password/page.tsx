@@ -1,6 +1,6 @@
 import { Mail, ArrowRight, ShieldCheck } from "lucide-react";
 import HeaderAlt from "@/components/HeaderAlt";
-import FooterAlt from "@/components/FooterAlt";
+import { DarkFooter } from "@/components/Shared";
 import FormField from "@/components/ui/FormField";
 import PrimaryButton from "@/components/ui/PrimaryButton";
 import Divider from "@/components/ui/Divider";
@@ -129,7 +129,7 @@ export default function ResetPasswordPage() {
         </div>
       </main>
 
-      <FooterAlt />
+      <DarkFooter />
     </>
   );
 }
