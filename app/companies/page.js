@@ -240,7 +240,7 @@ export default function CompaniesPage() {
             <FilterGroup title="Industry" items={industries} more />
             <FilterGroup title="Company Size" items={sizes} />
 
-            <button className="h-11 w-full rounded-lg border border-[#dbe4f2] bg-white text-[13px] font-semibold text-ink-700 hover:bg-slate-50">
+            <button className="h-11 w-full rounded-lg border border-[#d3efd3] bg-white text-[13px] font-semibold text-ink-700 hover:bg-slate-50">
               Apply Filters
             </button>
           </aside>

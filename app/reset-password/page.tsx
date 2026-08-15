@@ -33,17 +33,17 @@ export default function ResetPasswordPage() {
 
             <div className="relative mt-14 w-full max-w-xs h-52">
               <svg viewBox="0 0 300 220" className="w-full h-full">
-                <circle cx="150" cy="110" r="95" fill="#dbeafe" opacity="0.6" />
-                <rect x="55" y="90" width="90" height="75" rx="10" fill="#3b82f6" />
-                <path d="M70 90 v-25 a25 25 0 0 1 50 -12" stroke="#3b82f6" strokeWidth="12" fill="none" strokeLinecap="round" />
-                <circle cx="100" cy="122" r="8" fill="#1d4ed8" />
-                <rect x="96" y="122" width="8" height="16" rx="3" fill="#1d4ed8" />
+                <circle cx="150" cy="110" r="95" fill="#d3efd3" opacity="0.6" />
+                <rect x="55" y="90" width="90" height="75" rx="10" fill="#3ebd3e" />
+                <path d="M70 90 v-25 a25 25 0 0 1 50 -12" stroke="#3ebd3e" strokeWidth="12" fill="none" strokeLinecap="round" />
+                <circle cx="100" cy="122" r="8" fill="#2c8c2c" />
+                <rect x="96" y="122" width="8" height="16" rx="3" fill="#2c8c2c" />
                 <g transform="translate(120,95)">
-                  <rect x="0" y="20" width="110" height="75" rx="6" fill="#ffffff" stroke="#93c5fd" strokeWidth="2" />
-                  <path d="M0 22 L55 62 L110 22" stroke="#93c5fd" strokeWidth="2" fill="none" />
+                  <rect x="0" y="20" width="110" height="75" rx="6" fill="#ffffff" stroke="#a9e3a9" strokeWidth="2" />
+                  <path d="M0 22 L55 62 L110 22" stroke="#a9e3a9" strokeWidth="2" fill="none" />
                   <circle cx="90" cy="30" r="13" fill="#22c55e" />
-                  <path d="M20 5 L45 -20" stroke="#3b82f6" strokeWidth="4" strokeLinecap="round" />
-                  <path d="M45 -20 l-14 2 l6 13 z" fill="#3b82f6" />
+                  <path d="M20 5 L45 -20" stroke="#3ebd3e" strokeWidth="4" strokeLinecap="round" />
+                  <path d="M45 -20 l-14 2 l6 13 z" fill="#3ebd3e" />
                 </g>
               </svg>
             </div>

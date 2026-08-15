@@ -65,7 +65,7 @@ const systemStatus = [
 ];
 
 const jobCategories = [
-  { label: "Engineering", value: 1245, pct: "35.7%", color: "#2563eb" },
+  { label: "Engineering", value: 1245, pct: "35.7%", color: "#35a535" },
   { label: "Drilling", value: 842, pct: "24.1%", color: "#7c3aed" },
   { label: "Operations", value: 658, pct: "18.9%", color: "#059669" },
   { label: "HSE / Safety", value: 401, pct: "11.5%", color: "#f59e0b" },
@@ -148,7 +148,7 @@ export default function AdminDashboardPage() {
                     <XAxis dataKey="day" tick={{ fontSize: 12, fill: "#94a3b8" }} axisLine={false} tickLine={false} />
                     <YAxis tick={{ fontSize: 12, fill: "#94a3b8" }} axisLine={false} tickLine={false} />
                     <Tooltip />
-                    <Line type="monotone" dataKey="Users" stroke="#2563eb" strokeWidth={2.5} dot={{ r: 3 }} />
+                    <Line type="monotone" dataKey="Users" stroke="#35a535" strokeWidth={2.5} dot={{ r: 3 }} />
                     <Line type="monotone" dataKey="Applications" stroke="#fb923c" strokeWidth={2.5} dot={{ r: 3 }} />
                     <Line type="monotone" dataKey="Jobs" stroke="#10b981" strokeWidth={2.5} dot={{ r: 3 }} />
                   </LineChart>

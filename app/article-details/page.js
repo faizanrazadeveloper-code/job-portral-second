@@ -163,7 +163,7 @@ export default function ArticleDetailsPage() {
               </section>
             ))}
 
-            <div className="mt-8 flex gap-3.5 rounded-xl bg-[#f2f7ff] p-5">
+            <div className="mt-8 flex gap-3.5 rounded-xl bg-[#eaf7ea] p-5">
               <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-brand-500 text-white">
                 <Zap className="h-4 w-4" />
               </span>
@@ -249,14 +249,14 @@ export default function ArticleDetailsPage() {
               </Link>
             </section>
 
-            <section className="relative overflow-hidden rounded-xl bg-[#eff5ff] p-5">
+            <section className="relative overflow-hidden rounded-xl bg-[#eaf7ea] p-5">
               <h3 className="text-[15px] font-bold">Stay Updated</h3>
               <p className="mt-2 text-[12.5px] leading-relaxed text-ink-500">
                 Get the latest energy insights and industry news delivered to your inbox.
               </p>
               <div className="mt-4 flex">
                 <input
-                  className="h-11 w-full rounded-l-lg border border-r-0 border-[#dbe4f2] bg-white px-3.5 text-[12.5px] outline-none focus:border-brand-500"
+                  className="h-11 w-full rounded-l-lg border border-r-0 border-[#d3efd3] bg-white px-3.5 text-[12.5px] outline-none focus:border-brand-500"
                   placeholder="Enter your email"
                 />
                 <button className="grid h-11 w-12 shrink-0 place-items-center rounded-r-lg bg-brand-500 text-white hover:bg-brand-600">

@@ -116,8 +116,8 @@ export default function JobDetailsPage() {
                 (Recommended size: 1200x628px)
               </span>
             </h3>
-            <div className="grid place-items-center rounded-xl border-2 border-dashed border-[#dbe4f2] bg-[#fbfcfe] px-4 py-12 text-center">
-              <span className="mb-3 grid h-12 w-12 place-items-center rounded-full border-2 border-dashed border-[#c7d5ea]">
+            <div className="grid place-items-center rounded-xl border-2 border-dashed border-[#d3efd3] bg-[#f7fdf7] px-4 py-12 text-center">
+              <span className="mb-3 grid h-12 w-12 place-items-center rounded-full border-2 border-dashed border-[#a9e3a9]">
                 <UploadCloud className="h-5 w-5 text-brand-500" />
               </span>
               <p className="text-[14px] font-bold">Click to upload image</p>
@@ -200,7 +200,7 @@ export default function JobDetailsPage() {
               />
             </div>
 
-            <button className="mt-4 inline-flex h-11 items-center gap-2 rounded-lg border border-[#dbe4f2] bg-white px-4 text-[13px] font-semibold text-brand-500 hover:bg-brand-50">
+            <button className="mt-4 inline-flex h-11 items-center gap-2 rounded-lg border border-[#d3efd3] bg-white px-4 text-[13px] font-semibold text-brand-500 hover:bg-brand-50">
               <Plus className="h-4 w-4" /> Add Another Location
             </button>
           </section>
@@ -256,7 +256,7 @@ export default function JobDetailsPage() {
               </table>
             </div>
 
-            <button className="mt-4 inline-flex h-11 items-center gap-2 rounded-lg border border-[#dbe4f2] bg-white px-4 text-[13px] font-semibold text-brand-500 hover:bg-brand-50">
+            <button className="mt-4 inline-flex h-11 items-center gap-2 rounded-lg border border-[#d3efd3] bg-white px-4 text-[13px] font-semibold text-brand-500 hover:bg-brand-50">
               <Plus className="h-4 w-4" /> Add More Position
             </button>
           </section>
@@ -429,7 +429,7 @@ export default function JobDetailsPage() {
             </div>
           </section>
 
-          <section className="rounded-xl bg-[#f4f7fd] p-5">
+          <section className="rounded-xl bg-[#eaf7ea] p-5">
             <p className="mb-1.5 flex items-center gap-2 text-[13px] font-bold text-brand-500">
               <HelpCircle className="h-4 w-4" /> Note
             </p>

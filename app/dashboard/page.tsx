@@ -244,7 +244,7 @@ function DashboardSidebar({ profileCompletion }: { profileCompletion: number }) 
                   cy="18"
                   r="16"
                   fill="none"
-                  stroke="#dbeafe"
+                  stroke="#d3efd3"
                   strokeWidth="4"
                 />
                 <circle
@@ -252,7 +252,7 @@ function DashboardSidebar({ profileCompletion }: { profileCompletion: number }) 
                   cy="18"
                   r="16"
                   fill="none"
-                  stroke="#2563eb"
+                  stroke="#35a535"
                   strokeWidth="4"
                   strokeDasharray={`${2 * Math.PI * 16}`}
                   strokeDashoffset={`${
@@ -552,7 +552,7 @@ export default function JobSeekerDashboardPage() {
                           cy="18"
                           r="15.5"
                           fill="none"
-                          stroke="#2563eb"
+                          stroke="#35a535"
                           strokeWidth="3"
                           strokeDasharray={`${2 * Math.PI * 15.5}`}
                           strokeDashoffset={`${

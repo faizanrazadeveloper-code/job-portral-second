@@ -282,15 +282,15 @@ export default function AuthorDashboardPage() {
               <polyline
                 points={pathPoints}
                 fill="none"
-                stroke="#2563eb"
+                stroke="#35a535"
                 strokeWidth="1.5"
                 vectorEffect="non-scaling-stroke"
               />
               <polygon points={`0,100 ${pathPoints} 100,100`} fill="url(#grad2)" opacity="0.15" />
               <defs>
                 <linearGradient id="grad2" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#2563eb" />
-                  <stop offset="100%" stopColor="#2563eb" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#35a535" />
+                  <stop offset="100%" stopColor="#35a535" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>

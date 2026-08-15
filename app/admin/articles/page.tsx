@@ -28,7 +28,7 @@ const statusColor: Record<
   Published: { badge: "green", dot: "#16a34a" },
   "Pending Review": { badge: "amber", dot: "#d97706" },
   Draft: { badge: "gray", dot: "#6b7280" },
-  Scheduled: { badge: "blue", dot: "#2563eb" },
+  Scheduled: { badge: "blue", dot: "#35a535" },
 };
 
 const tabs = ["All Articles", "Published", "Pending Review", "Draft", "Scheduled", "Trash"];
@@ -37,7 +37,7 @@ const donutData = [
   { label: "Published", value: 512, pct: 67.7, color: "#16a34a" },
   { label: "Pending Review", value: 78, pct: 10.3, color: "#f59e0b" },
   { label: "Draft", value: 95, pct: 12.6, color: "#a855f7" },
-  { label: "Scheduled", value: 41, pct: 5.4, color: "#2563eb" },
+  { label: "Scheduled", value: 41, pct: 5.4, color: "#35a535" },
   { label: "Trash", value: 30, pct: 4.0, color: "#ef4444" },
 ];
 

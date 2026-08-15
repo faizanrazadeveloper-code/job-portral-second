@@ -19,9 +19,9 @@ export default function SiteHeader({ active }: { active?: string }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white">
+    <header className="sticky top-0 z-50 bg-[#0B2B26]">
       {/* Top utility bar */}
-      <div className="hidden lg:block bg-[#0B2B26] text-slate-300 text-xs">
+      <div className="hidden lg:block text-slate-300 text-xs">
         <div className="mx-auto max-w-7xl px-6 py-2 flex items-center justify-between">
           <p className="flex items-center gap-1.5">
             <Flame size={12} className="text-blue-400" />
@@ -44,24 +44,24 @@ export default function SiteHeader({ active }: { active?: string }) {
       </div>
 
       {/* Main nav */}
-      <div className="border-b border-slate-200">
+      <div className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <img src="/logo.png" alt="Energy Tail" className="h-10 w-auto object-contain" />
+            <img src="/logo.png" alt="Energy Tail" className="h-10 w-auto object-contain brightness-0 invert" />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600">
+          <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
             {navLinks.map((l) => (
               <Link
                 key={l.label}
                 href={l.href}
-                className={`relative py-1 transition-colors hover:text-blue-600 ${
-                  active === l.label ? "text-blue-600" : ""
+                className={`relative py-1 transition-colors hover:text-white ${
+                  active === l.label ? "text-white" : ""
                 }`}
               >
                 {l.label}
                 {active === l.label && (
-                  <span className="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-blue-600" />
+                  <span className="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-white" />
                 )}
               </Link>
             ))}
@@ -70,19 +70,19 @@ export default function SiteHeader({ active }: { active?: string }) {
           <div className="hidden lg:flex items-center gap-3 shrink-0">
             <Link
               href="/login"
-              className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-600"
+              className="px-4 py-2 text-sm font-semibold text-slate-300 hover:text-white"
             >
               Login
             </Link>
             <Link
               href="/register"
-              className="px-4 py-2 text-sm font-semibold text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50"
+              className="px-4 py-2 text-sm font-semibold text-white border border-white/50 rounded-lg hover:bg-white/10"
             >
               Register
             </Link>
             <Link
               href="/employer-dashboard"
-              className="px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 flex items-center gap-1.5"
+              className="px-4 py-2 text-sm font-semibold text-[#0B2B26] bg-white rounded-lg hover:bg-slate-100 flex items-center gap-1.5"
             >
               Post a Job
             </Link>
@@ -90,7 +90,7 @@ export default function SiteHeader({ active }: { active?: string }) {
 
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden text-slate-700"
+            className="lg:hidden text-slate-300 hover:text-white"
             aria-label="Toggle menu"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
@@ -98,26 +98,26 @@ export default function SiteHeader({ active }: { active?: string }) {
         </div>
 
         {open && (
-          <div className="lg:hidden border-t border-slate-200 px-6 py-4 space-y-3">
+          <div className="lg:hidden border-t border-white/10 px-6 py-4 space-y-3">
             {navLinks.map((l) => (
               <Link
                 key={l.label}
                 href={l.href}
-                className="block text-sm font-medium text-slate-700 hover:text-blue-600"
+                className="block text-sm font-medium text-slate-300 hover:text-white"
               >
                 {l.label}
               </Link>
             ))}
-            <div className="flex gap-3 pt-3 border-t border-slate-100">
+            <div className="flex gap-3 pt-3 border-t border-white/10">
               <Link
                 href="/register"
-                className="flex-1 text-center px-4 py-2 text-sm font-semibold text-blue-600 border border-blue-600 rounded-lg"
+                className="flex-1 text-center px-4 py-2 text-sm font-semibold text-white border border-white/50 rounded-lg"
               >
                 Register
               </Link>
               <Link
                 href="/employer-dashboard"
-                className="flex-1 text-center px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-lg"
+                className="flex-1 text-center px-4 py-2 text-sm font-semibold text-[#0B2B26] bg-white rounded-lg"
               >
                 Post a Job
               </Link>

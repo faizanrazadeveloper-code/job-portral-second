@@ -20,16 +20,16 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header>
+    <header className="bg-[#0B2B26]">
       <TopBar />
-      <div className="border-b border-slate-100">
+      <div className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-4 py-3.5 flex items-center justify-between gap-6">
           <Link href="/">
-            <Logo />
+            <Logo light />
           </Link>
-          <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600">
+          <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
             {navItems.map((item) => (
-              <Link key={item.label} href={item.href} className="hover:text-blue-600">
+              <Link key={item.label} href={item.href} className="hover:text-white">
                 {item.label}
               </Link>
             ))}
@@ -37,26 +37,26 @@ export default function Header() {
           <div className="flex items-center gap-3 shrink-0">
             <Link
               href="/login"
-              className="text-sm font-medium text-slate-700 border border-slate-200 rounded-md px-4 py-2 hover:border-blue-400 hover:text-blue-600"
+              className="text-sm font-medium text-slate-300 border border-white/50 rounded-md px-4 py-2 hover:border-white hover:text-white"
             >
               Login
             </Link>
             <Link
               href="/register"
-              className="hidden sm:inline-block text-sm font-medium text-blue-600 border border-blue-200 rounded-md px-4 py-2 hover:bg-blue-50"
+              className="hidden sm:inline-block text-sm font-medium text-white border border-white/50 rounded-md px-4 py-2 hover:bg-white/10"
             >
               Register
             </Link>
             <Link
               href="/employer-dashboard"
-              className="hidden md:flex items-center gap-1.5 text-sm font-medium text-white bg-blue-600 rounded-md px-4 py-2 hover:bg-blue-700"
+              className="hidden md:flex items-center gap-1.5 text-sm font-medium text-[#0B2B26] bg-white rounded-md px-4 py-2 hover:bg-slate-100"
             >
               <Send className="w-3.5 h-3.5" />
               Post a Job
             </Link>
             <button
               onClick={() => setOpen(!open)}
-              className="lg:hidden p-2 text-slate-600 hover:bg-slate-50 rounded-md"
+              className="lg:hidden p-2 text-slate-300 hover:bg-white/10 rounded-md"
               aria-label="Toggle menu"
             >
               {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -66,14 +66,14 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-b border-slate-100 bg-white">
+        <div className="lg:hidden border-b border-white/10 bg-[#0B2B26]">
           <nav className="px-4 py-3 flex flex-col">
             {navItems.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="py-3 border-b border-slate-50 text-sm font-medium text-slate-600 hover:text-blue-600"
+                className="py-3 border-b border-white/10 text-sm font-medium text-slate-300 hover:text-white"
               >
                 {item.label}
               </Link>
@@ -81,14 +81,14 @@ export default function Header() {
             <Link
               href="/register"
               onClick={() => setOpen(false)}
-              className="py-3 border-b border-slate-50 text-sm font-medium text-blue-600"
+              className="py-3 border-b border-white/10 text-sm font-medium text-white"
             >
               Register
             </Link>
             <Link
               href="/employer-dashboard"
               onClick={() => setOpen(false)}
-              className="mt-3 flex items-center justify-center gap-1.5 text-sm font-medium text-white bg-blue-600 rounded-md px-4 py-2.5"
+              className="mt-3 flex items-center justify-center gap-1.5 text-sm font-medium text-[#0B2B26] bg-white rounded-md px-4 py-2.5"
             >
               <Send className="w-3.5 h-3.5" />
               Post a Job

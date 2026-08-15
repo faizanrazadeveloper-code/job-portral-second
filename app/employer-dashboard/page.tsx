@@ -157,7 +157,7 @@ export default function EmployerDashboardPage() {
                 <polyline
                   points={pathPoints}
                   fill="none"
-                  stroke="#2563eb"
+                  stroke="#35a535"
                   strokeWidth="1.5"
                   vectorEffect="non-scaling-stroke"
                 />
@@ -168,8 +168,8 @@ export default function EmployerDashboardPage() {
                 />
                 <defs>
                   <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#2563eb" />
-                    <stop offset="100%" stopColor="#2563eb" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#35a535" />
+                    <stop offset="100%" stopColor="#35a535" stopOpacity="0" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -197,7 +197,7 @@ export default function EmployerDashboardPage() {
                           fill="none"
                           stroke={
                             s.color === "bg-blue-600"
-                              ? "#2563eb"
+                              ? "#35a535"
                               : s.color === "bg-violet-500"
                               ? "#8b5cf6"
                               : s.color === "bg-emerald-500"

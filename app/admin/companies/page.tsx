@@ -225,7 +225,7 @@ export default function CompaniesPage() {
                   { label: "Active", value: 1098, pct: 87.6, color: "#22c55e" },
                   { label: "Pending", value: 42, pct: 3.4, color: "#f97316" },
                   { label: "Suspended", value: 18, pct: 1.4, color: "#ef4444" },
-                  { label: "Inactive", value: 95, pct: 7.6, color: "#60a5fa" },
+                  { label: "Inactive", value: 95, pct: 7.6, color: "#57c757" },
                 ]}
               />
               <div className="w-full mt-4 space-y-2.5">

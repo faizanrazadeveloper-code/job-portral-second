@@ -155,13 +155,13 @@ export default function ArticlesPage() {
 
       <div className="mx-auto max-w-[1440px] px-4 py-6 sm:px-6 lg:px-8">
         {/* Hero */}
-        <section className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#eef4fd] via-[#eaf1fb] to-[#dfeaf8] px-6 py-9 sm:px-9">
+        <section className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#eaf7ea] via-[#eaf7ea] to-[#d3efd3] px-6 py-9 sm:px-9">
           <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] md:block">
-            <div className="absolute bottom-0 right-[6%] h-[70%] w-[36%] rounded-t-sm bg-[#b9d2ee] [clip-path:polygon(20%_0,80%_0,100%_100%,0_100%)]" />
-            <div className="absolute bottom-0 right-[34%] h-[54%] w-[26%] rounded-t-sm bg-[#c9dcf1] [clip-path:polygon(22%_0,78%_0,100%_100%,0_100%)]" />
+            <div className="absolute bottom-0 right-[6%] h-[70%] w-[36%] rounded-t-sm bg-[#a9e3a9] [clip-path:polygon(20%_0,80%_0,100%_100%,0_100%)]" />
+            <div className="absolute bottom-0 right-[34%] h-[54%] w-[26%] rounded-t-sm bg-[#a9e3a9] [clip-path:polygon(22%_0,78%_0,100%_100%,0_100%)]" />
             {[8, 20, 30].map((r, i) => (
-              <div key={r} style={{ right: `${r}%`, height: `${44 - i * 8}%` }} className="absolute bottom-0 w-px bg-[#a9c6e6]">
-                <span className="absolute -left-4 -top-4 h-8 w-8 rounded-full border-2 border-[#a9c6e6]" />
+              <div key={r} style={{ right: `${r}%`, height: `${44 - i * 8}%` }} className="absolute bottom-0 w-px bg-[#a9e3a9]">
+                <span className="absolute -left-4 -top-4 h-8 w-8 rounded-full border-2 border-[#a9e3a9]" />
               </div>
             ))}
           </div>

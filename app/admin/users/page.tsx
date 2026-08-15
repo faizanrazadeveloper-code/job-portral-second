@@ -56,7 +56,7 @@ const roleStyle: Record<string, string> = {
 
 const pieData = [
   { name: "Job Seekers", value: 1932, color: "#10b981" },
-  { name: "Employers", value: 712, color: "#2563eb" },
+  { name: "Employers", value: 712, color: "#35a535" },
   { name: "Article Authors", value: 156, color: "#f59e0b" },
   { name: "Administrators", value: 46, color: "#ef4444" },
 ];
@@ -270,7 +270,7 @@ export default function UsersManagementPage() {
                   <div className="flex-1 space-y-2 text-xs">
                     {[
                       { label: "Job Seekers", value: "1,932 (67.9%)", color: "#10b981" },
-                      { label: "Employers", value: "712 (25.0%)", color: "#2563eb" },
+                      { label: "Employers", value: "712 (25.0%)", color: "#35a535" },
                       { label: "Article Authors", value: "156 (5.5%)", color: "#f59e0b" },
                       { label: "Administrators", value: "46 (1.6%)", color: "#ef4444" },
                     ].map((r) => (
